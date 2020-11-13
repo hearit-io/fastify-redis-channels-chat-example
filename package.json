@@ -1,0 +1,33 @@
+{
+  "name": "fastify-redis-channels-example",
+  "version": "1.0.0",
+  "description": "An example for a fastify-redis-channels plugin.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hearit-io/fastify-redis-channels-example.git"
+  },
+  "keywords": [
+    "example",
+    "fastify",
+    "redis",
+    "channel",
+    "reliable",
+    "high-performance",
+    "easy"
+  ],
+  "bugs": {
+    "url": "https://github.com/hearit-io/fastify-redis-channels-example/issues"
+  },
+  "homepage": "https://github.com/hearit-io/fastify-redis-channels-example#readme",
+  "author": "Emil Usunov <emil@hearit.io>",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^3.8.0",
+    "fastify-redis-channels": "^1.0.0",
+    "fastify-websocket": "^2.0.11"
+  }
+}
