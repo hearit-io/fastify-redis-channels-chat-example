@@ -29,8 +29,8 @@ async function handler(connection, req, params) {
         console.log('Consumer finished')
       })
       .catch((reject) => {
-        connection.socket.close();
-        return;
+        connection.socket.close()
+        return
       })
 
     // Produces recieved form a websocket messages to the corresponding tunnel.
@@ -39,8 +39,8 @@ async function handler(connection, req, params) {
         connection.resume()
         await fastify.channels.produce(tunnel, message)
       } catch (error) {
-        connection.socket.close();
-        return;
+        connection.socket.close()
+        return
       }
     })
 
@@ -50,7 +50,7 @@ async function handler(connection, req, params) {
     })
   }
   catch(error) {
-    connection.socket.close();
+    connection.socket.close()
   }
 }
 
@@ -59,7 +59,7 @@ async function handler(connection, req, params) {
 async function consume(fastify, connection, tunnel) {
   for await (const messages of fastify.channels.consume(tunnel)) {
     for (const i in messages) {
-      connection.socket.send(messages[i].data);
+      connection.socket.send(messages[i].data)
     }
   }
 }
