@@ -28,29 +28,29 @@ function view (room) {
     <script>
       const ws = new WebSocket(
         'ws://' + window.location.host + '/ws/' + '${room}'
-      );
+      )
 
       ws.onmessage = function(e) {
         const data = JSON.parse(e.data);
-        document.querySelector('#log').value += (data.message + '\\n');
-      };
+        document.querySelector('#log').value += (data.message + '\\n')
+      }
 
       ws.onclose = function(e) {
-        console.error('socket closed');
+        console.error('socket closed')
       }
 
       document.querySelector('#input').focus();
       document.querySelector('#input').onkeyup = function(e) {
         if (e.keyCode === 13) {
-          document.querySelector('#submit').click();
+          document.querySelector('#submit').click()
         }
-      };
+      }
 
       document.querySelector('#submit').onclick = function(e) {
-        const inputElem = document.querySelector('#input');
-        ws.send(JSON.stringify({ 'message': inputElem.value }));
-        inputElem.value = '';
-      };
+        const inputElem = document.querySelector('#input')
+        ws.send(JSON.stringify({ 'message': inputElem.value }))
+        inputElem.value = ''
+      }
     </script>
   </body>
   </html>
