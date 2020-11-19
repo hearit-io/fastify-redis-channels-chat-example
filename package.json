@@ -27,7 +27,7 @@
   "license": "MIT",
   "dependencies": {
     "fastify": "^3.8.0",
-    "fastify-redis-channels": "^1.0.0",
+    "fastify-redis-channels": "^1.1.2",
     "fastify-websocket": "^2.0.11"
   }
 }
