@@ -1,5 +1,5 @@
 {
-  "name": "fastify-redis-channels-example",
+  "name": "fastify-redis-channels-chat-example",
   "version": "1.0.1",
   "description": "An example for a fastify-redis-channels plugin.",
   "main": "index.js",
@@ -20,9 +20,9 @@
     "easy"
   ],
   "bugs": {
-    "url": "https://github.com/hearit-io/fastify-redis-channels-example/issues"
+    "url": "https://github.com/hearit-io/fastify-redis-channels-chat-example/issues"
   },
-  "homepage": "https://github.com/hearit-io/fastify-redis-channels-example#readme",
+  "homepage": "https://github.com/hearit-io/fastify-redis-channels-chat-example#readme",
   "author": "Emil Usunov <emil@hearit.io>",
   "license": "MIT",
   "dependencies": {
