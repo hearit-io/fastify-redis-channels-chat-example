@@ -9,7 +9,7 @@ fastify.after(error => {
 
 fastify.register(require('fastify-redis-channels'), {
   channels: {
-    application: 'example',
+    application: 'chat',
   },
   redis: {
     host: 'localhost',
